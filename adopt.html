@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/2780e15db7.js" crossorigin="anonymous"></script>
+    <title>Cat-Feteria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+    <!-- ******************************* START OF NAVBAR ******************************* -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top shadow-lg bg-body">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="assets/catlogo.png">
+                <span class="cat1 fw-bold ms-2 text-white">
+                    CAT
+                  </span>
+                  <span class="fetit fw-bold ms-2 text-white">
+                    Feteria
+                  </span>
+            </a>
+            <div class="order-lg-2 icons-nav">
+                <button class="btn btn-outline-white text-white" type="submit" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">BOOK NOW</button>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-1" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item text-uppercase px-2 py-2">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-uppercase px-2 py-2">
+                        <a class="nav-link text-white" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item text-uppercase px-2 py-2">
+                        <a class="nav-link text-white" href="meet-our-cats.html">Meet our Cats</a>
+                    </li>
+                    <li class="nav-item text-uppercase px-2 py-2">
+                        <a class="nav-link text-white" href="adopt.html">Adopt</a>
+                    </li>
+                    <li class="nav-item text-uppercase px-2 py-2">
+                        <a class="nav-link text-white" href="reviews.html">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ******************************* END OF NAVBAR ******************************* -->
+
+    <!-- ******************************* START OF ADOPT ******************************* -->
+    <section class="rules bg-secondary py-3">
+        <div class="guidelines postion-absolute d-flex justify-content-center flex-wrap">
+
+            <div class="guidelines-img">
+                <img class="shadow-lg" src="assets/cat-adopt.png" alt="">
+            </div>
+
+            <div class="guidelines-accord">
+                <div class="guide">
+                    <span>Steps to adopt a pet</span>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fa-solid fa-paw mx-2"></i> 1. Fill a form online
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Once submitted a copy of the same form will be sent to your email as well. Our team will
+                                assess the details and contact you via phone to go over the necessary processes.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fa-solid fa-paw mx-2"></i> 2. Visit the Cafe.
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                In person questionaire and review with member of our team.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fa-solid fa-paw mx-2"></i> 3. Appointment
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Once your adoption application has been approved, we will arrange an appointment for you
+                                sign the adoption form document, pay the adoption fee, after that you can pick up your
+                                cat/cats at the agreed day and time along with her/his passport – vaccination book and
+                                their food. Food, litter, carrier and everything else required can be purchased directly
+                                from the cat-feteria, or any other pet shop of your choice.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-flex justify-content-center mb-5">
+        <form class="adoption-form">
+            <div class="information">
+                <div class="contact-info">
+                    <span>Contact Information</span>
+                </div>
+                <div class="contact-info-input">
+                    <span><input type="text" id="contactInfo" name=" contactInfo" placeholder="  Email or mobile number"
+                            size="50" required>
+                    </span>
+                </div>
+                <div class="news">
+                    <span><input type="checkbox" id="news" name="news" value="yes"></span>
+                    <span>Email me with news and offers</span>
+                </div>
+                <div class="country">
+                    <select id="country" name="country">
+                        <option disabled selected>Please select country</option>
+                        <option value="philippines">Philippines</option>
+                        <option value="japan">Japan</option>
+                    </select>
+                </div>
+                <div class="names">
+                    <span><input type="text" id="firstName" name="firstName" placeholder="  First Name" size="50"
+                            required>
+                    </span>
+                    <span><input type="text" id="lastName" name="lastName" placeholder="  Last Name" size="50" required>
+                    </span>
+                </div>
+                <div class="street-address">
+                    <span><input type="text" id="streetAddress" name="streetAddress" placeholder="  Address" size="50"
+                            required>
+                    </span>
+                </div>
+                <div class="brgy">
+                    <span><input type="text" id="brgy" name="brgy" placeholder="  Barangay" size="50" required>
+                    </span>
+                </div>
+                <div class="division">
+                    <span><input type="text" id="postalCode" name="postalCode" placeholder="  Postal Code" size="50"
+                            required>
+                    </span>
+                    <span><input type="text" id="city" name="city" placeholder="  Municipality/City" size="50" required>
+                    </span>
+                </div>
+                <div class="province">
+                    <select id="province" name="province">
+                        <option disabled selected>Province</option>
+                        <option value="laguna">Laguna</option>
+                        <option value="manila">Batangas</option>
+                    </select>
+                </div>
+                <div class="save">
+                    <span><input type="checkbox" id="save" name="save" value="yes"></span>
+                    <span>Save this information next time</span>
+                </div>
+                <div class="d-flex adopt-btn justify-content-center mt-3">
+                    <button type="button" class="btn btn-primary border-0 mx-1">Adopt Now</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- ******************************* END OF ADOPT ******************************* -->
+
+
+    <!-- ******************************* START OF FOOTER ******************************* -->
+    <footer>
+        <div class="end-foot">
+            <div class="social-icons d-flex justify-content-center position-relative mt-3">
+                <span><i class="fa-brands fa-square-facebook px-1 text-white"></i></span>
+                <span><i class="fa-brands fa-square-instagram px-1 text-white"></i></span>
+                <span><i class="fa-brands fa-square-twitter px-1 text-white"></i></span>
+            </div>
+            <div class="legals d-flex justify-content-center">
+                <span class="px-1 text-white">License</span>
+                <span class="px-1 text-white">Terms of Service</span>
+                <span class="px-1 text-white">Policy Privacy</span>
+                <span class="px-1 text-white">Refunds</span>
+            </div>
+            <hr class="solid-line position-relative">
+            <div class="copyrights d-flex justify-content-center position-relative px-1">
+                <span class="px-1 py-2 text-white">Copyright 2023. Alright Reserved</span>
+            </div>
+        </div>
+    </footer>
+    <!-- ******************************* END OF FOOTER ******************************* -->
+
+    <!-- ************* CHECKOUT MODAL ************* -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold text-primary" id="exampleModalLabel">RESERVATION FORM</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row mx-2 my-3">
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <span>Date</span>
+                                    <input type="date" name="dateOfVisit" id="dateOfVisit" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <span>Time</span>
+                                    <input type="time" name="timeOfVisit" id="timeOfVisit" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-2">
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input id="email" type="email" class="form-control"
+                                        placeholder="Recepient's Email Address">
+                                    <label for="email">Email Address</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input id="noOfVisitors" type="number" class="form-control"
+                                        placeholder="Number of Visitor">
+                                    <label for="noOfVisitors">Number of Visitor</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating mt-3 mx-3">
+                            <input id="name" type="text" class="form-control" placeholder="Visitor's Name">
+                            <label for="name">Guest Name</label>
+                        </div>
+                        <div class="row mt-3 mb-5 mx-3">
+                            <div class="col-6">Payment Method</div>
+                            <div class="col-6 d-flex flex-column">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Cash</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Gcash</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio2">Credit/Debit Card</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex book-btn">
+                            <button type="button" class="btn btn-secondary mx-1" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary border-0 mx-1">Book Now</button>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- ************* END OF CHECKOUT ************* -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
